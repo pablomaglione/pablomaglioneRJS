@@ -1,4 +1,5 @@
 import './App.css';
+import ItemCount from './components/ItemCount';
 import ItemListContainer from "./components/ItemListContainer"
 import NavBar from "./components/NavBar";
 
@@ -9,9 +10,11 @@ function App() {
       <div className="App">
         <NavBar />
       </div>
-      <hr />
       <div>
         <ItemListContainer titulo="Productos" />
+      </div>
+      <div>
+        <ItemCount stock={10} initial={0}/>
       </div>
     </div>
 
