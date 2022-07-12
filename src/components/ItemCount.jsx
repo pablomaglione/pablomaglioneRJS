@@ -1,17 +1,28 @@
 import React, {useState} from 'react';
 import Swal from 'sweetalert2'
 
+
 const ItemCount = (props) => {
     const[count, setCount] = useState (props.initial);
+    const [disabled, setDisabled] = useState (props.btn);
 
     function cantSubstract(){
-        if(count > 0)
-        setCount(count - 1);
+        if(count > 0){
+            if(count == 1){
+                setDisabled(true);
+            }
+            setCount(count - 1);
+        }
     }
 
     function cantAdd(){
-        if(props.stock > count)
-        setCount(count + 1);
+        if(props.stock > count){
+            setCount(count + 1);
+            setDisabled(false);
+        }
+        else{            
+            Swal.fire('No se puede agregar más productos')
+        }
     }
 
     function finCompra(){
@@ -33,7 +44,7 @@ const ItemCount = (props) => {
                     <button onClick={cantAdd}> + </button>
                 </div>
                 <div>
-                    <button class="btn" onClick={finCompra}> Agregar Producto </button>
+                    <button class="btn" onClick={finCompra} disabled={disabled}> Agregar Producto </button>
                 </div>
             </div>
         </div>

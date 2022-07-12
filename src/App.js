@@ -14,7 +14,7 @@ function App() {
         <ItemListContainer titulo="Productos" />
       </div>
       <div>
-        <ItemCount stock={10} initial={0}/>
+        <ItemCount stock={10} initial={0} btn={true}/>
       </div>
     </div>
 
