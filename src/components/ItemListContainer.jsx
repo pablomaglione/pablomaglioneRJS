@@ -1,9 +1,26 @@
-function ItemListContainer({titulo}) {
-    return (
-        <div class="flex flex-col text-center w-full mb-6">
-            <h1 class="sm:text-2x1 text1x1 title-font mb">{titulo}</h1>
-        </div>
-    )    
+import { useState, useEffect } from "react";
+import ItemList from "./ItemList";
+import dato from "../data/productos.json";
+
+function ItemListContainer (props) {
+    
+    const [items, setItems] = useState([]);
+    
+    console.log(items);
+    useEffect(() => {
+        let promiseItems = new Promise ((res) => {
+            setTimeout (() => res(dato),2000);});   
+
+        promiseItems.then((resp) => setItems(dato));
+    }, []);
+    
+    return(
+        <>
+            <div>
+                <ItemList prod={items} />
+            </div>
+        </>
+    );
 };
 
 export default ItemListContainer;
