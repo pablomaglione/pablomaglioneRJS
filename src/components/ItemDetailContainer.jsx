@@ -1,23 +1,25 @@
 import { useState, useEffect } from "react";
-import ItemList from "./ItemList";
+import ItemDetail from "./ItemDetail";
 import dato from "../data/productos.json";
+
 
 function getProducto () {
     return new Promise ((res) => {
         setTimeout (() => res(dato),2000);}); 
 }
 
-function ItemListContainer () {
+function ItemListContainer (props) {
 
     const [items, setItems] = useState([]);
     
     useEffect(() => {
-        getProducto().then((resp) => setItems(resp));
+        getProducto().then((resp) => setItems(resp[2]));
     }, []);
+    
     return(
         <>
             <div>
-                <ItemList prod={items} />
+                <ItemDetail producto={items} />
             </div>
         </>
     );

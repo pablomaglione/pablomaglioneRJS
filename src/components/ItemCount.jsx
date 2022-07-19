@@ -36,15 +36,15 @@ const ItemCount = (props) => {
     }
 
     return (
-        <div class="container px-5 py-8 mx-auto">
-            <div class="flex flex-col text-center w-full mb-12">
-                <div style={{padding: "1.5rem"}}>
+        <div className="container px-8 py-8 mx-auto">
+            <div className="flex flex-col text-center w-full mb-12">
+                <div style={{padding: "0.5rem"}}>
                     <button onClick={cantSubstract}> - </button>
                     <span> {count} </span>
                     <button onClick={cantAdd}> + </button>
                 </div>
                 <div>
-                    <button class="btn" onClick={finCompra} disabled={disabled}> Agregar Producto </button>
+                    <button className="third add btn-agregar btn btn-primary" onClick={finCompra} disabled={disabled}> Agregar Producto </button>
                 </div>
             </div>
         </div>

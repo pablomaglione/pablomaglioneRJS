@@ -3,62 +3,72 @@
         "detalle": "Aros de color oro viejo",
         "precio": 4500,
         "id": 1,
-        "img": "/img/istockphoto-1094472820-612x612.jpg"
+        "img": "/img/istockphoto-1094472820-612x612.jpg",
+        "stock": 4
     },
     {
         "nombre": "Aros con esmeralda",
         "detalle": "Par de aros de esmeralda verde aislado",
         "precio": 17500,
         "id": 2,
-        "img": "/img/istockphoto-1145185972-612x612.jpg"
+        "img": "/img/istockphoto-1145185972-612x612.jpg",
+        "stock": 3
     },
     {
         "nombre": "Colgante de Zafiro",
         "detalle": "Colgante de Zafiro Azul en forma de pera",
         "precio": 9450,
         "id": 3,
-        "img": "/img/istockphoto-936858190-612x612.jpg"
+        "img": "/img/istockphoto-936858190-612x612.jpg",
+        "stock": 2
     },
     {
         "nombre": "Anillos de Oro Rosa y Plata",
         "detalle": "Anillo femenino decorado con diamante.",
         "precio": 8500,
         "id": 4,
-        "img": "/img/istockphoto-1167923410-612x612.jpg"
+        "img": "/img/istockphoto-1167923410-612x612.jpg",
+        "stock": 2
     },
     {
         "nombre": "Anillo de Plata",
         "detalle": "Con Zaffiro azul",
         "precio": 21300,
         "id": 5,
-        "img": "/img/istockphoto-1200574929-612x612.jpg"
+        "img": "/img/istockphoto-1200574929-612x612.jpg",
+        "stock": 6
     },
     {
         "nombre": "Anillos de banda redonda",
         "detalle": "Anillos de plata",
         "precio": 5800,
         "id": 6,
-        "img": "/img/istockphoto-172753313-612x612.jpg"
+        "img": "/img/istockphoto-172753313-612x612.jpg",
+        "stock": 5
     },
     {
         "nombre": "Orient RA",
         "detalle": "Malla y caja de acero inoxidable, cristal mineral",
         "precio": 47500,
         "id": 7,
-        "img": "/img/orient-tristar-blu-cab.jpg"
+        "img": "/img/orient-tristar-blu-cab.jpg",
+        "stock": 3
     },
     {
         "nombre": "Orient FAB0000FC",
         "detalle": "Reloj Vintage. Automático",
         "precio": 67000,
         "id": 8,
-        "img": "/img/orient-tristar-Oro-cab.jpg"
+        "img": "/img/orient-tristar-Oro-cab.jpg",
+        "stock": 1
     },
     {
         "nombre": "Bulova",
         "detalle": "Acero inoxidable y detalles con oro rosa 5 diamantes",
         "precio": 57000,
         "id": 9,
-        "img": "/img/orologi-donna-automatici-dama.jpg"
+        "img": "/img/orologi-donna-automatici-dama.jpg",
+        "stock": 4
+
     }
 ]
