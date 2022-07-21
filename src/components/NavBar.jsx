@@ -1,24 +1,28 @@
 import React from "react";
 import imgLogo from "../assets/img/logo_size.png"
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
-const NavBar = (props) => {
-  console.log(props);
+const NavBar = () => {
   return (
     <header>     
       <nav className="navbar navbar-expand-sm bg-light">
       <div>
-        <a href="#">
+        <Link to={"/"}>
           <img width="100" src={imgLogo} alt="logo" />
-        </a>
+        </Link>
       </div>
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+              <Link className="nav-link active" aria-current="page" to={"/"}>Inicio</Link>
+              <Link className="nav-link" to={"category/Relojes"}>Relojes</Link>
+              <Link className="nav-link" to={"category/Alianzas"}>Alianzas</Link>
+              <Link className="nav-link" to={"category/Joyas"}>Joyas</Link>
+              {/*<a className="nav-link active" aria-current="page" href="#">Inicio</a>
               <a className="nav-link" href="#">Relojes</a>
               <a className="nav-link" href="#">Joyas</a>
-              <a className="nav-link" href="#">Alianzas</a>
+  <a className="nav-link" href="#">Alianzas</a>*/}
             </div>
           </div>
         </div>

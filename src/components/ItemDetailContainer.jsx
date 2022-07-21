@@ -1,28 +1,30 @@
 import { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
-import dato from "../data/productos.json";
+import { useParams } from "react-router-dom";
 
 
-function getProducto () {
-    return new Promise ((res) => {
-        setTimeout (() => res(dato),2000);}); 
-}
-
-function ItemListContainer (props) {
+function ItemDetailContainer(props) {
 
     const [items, setItems] = useState([]);
-    
+    const params = useParams();
+    const promise = new Promise((res) => {
+        setTimeout(() => res(ItemDetail), 2000);
+    })
+
     useEffect(() => {
-        getProducto().then((resp) => setItems(resp[2]));
+        promise.then((resp) => {
+            const foundItem = resp.filter((items) => items.id == params.id);
+            setItems(foundItem[0]);
+        });
     }, []);
-    
-    return(
+
+    return (
         <>
-            <div>
+            {<div>
                 <ItemDetail producto={items} />
-            </div>
+            </div>}
         </>
     );
 };
 
-export default ItemListContainer;
+export default ItemDetailContainer;

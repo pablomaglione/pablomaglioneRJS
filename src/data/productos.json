@@ -4,7 +4,8 @@
         "precio": 4500,
         "id": 1,
         "img": "/img/istockphoto-1094472820-612x612.jpg",
-        "stock": 4
+        "stock": 4,
+        "category": "Joyas"
     },
     {
         "nombre": "Aros con esmeralda",
@@ -12,7 +13,8 @@
         "precio": 17500,
         "id": 2,
         "img": "/img/istockphoto-1145185972-612x612.jpg",
-        "stock": 3
+        "stock": 3,
+        "category": "Joyas"
     },
     {
         "nombre": "Colgante de Zafiro",
@@ -20,7 +22,8 @@
         "precio": 9450,
         "id": 3,
         "img": "/img/istockphoto-936858190-612x612.jpg",
-        "stock": 2
+        "stock": 2,
+        "category": "Joyas"
     },
     {
         "nombre": "Anillos de Oro Rosa y Plata",
@@ -28,7 +31,8 @@
         "precio": 8500,
         "id": 4,
         "img": "/img/istockphoto-1167923410-612x612.jpg",
-        "stock": 2
+        "stock": 2,
+        "category": "Alianzas"
     },
     {
         "nombre": "Anillo de Plata",
@@ -36,7 +40,8 @@
         "precio": 21300,
         "id": 5,
         "img": "/img/istockphoto-1200574929-612x612.jpg",
-        "stock": 6
+        "stock": 6,
+        "category": "Alianzas"
     },
     {
         "nombre": "Anillos de banda redonda",
@@ -44,7 +49,8 @@
         "precio": 5800,
         "id": 6,
         "img": "/img/istockphoto-172753313-612x612.jpg",
-        "stock": 5
+        "stock": 5,
+        "category": "Alianzas"
     },
     {
         "nombre": "Orient RA",
@@ -52,7 +58,8 @@
         "precio": 47500,
         "id": 7,
         "img": "/img/orient-tristar-blu-cab.jpg",
-        "stock": 3
+        "stock": 3,
+        "category": "Relojes"
     },
     {
         "nombre": "Orient FAB0000FC",
@@ -60,7 +67,8 @@
         "precio": 67000,
         "id": 8,
         "img": "/img/orient-tristar-Oro-cab.jpg",
-        "stock": 1
+        "stock": 1,
+        "category": "Relojes"
     },
     {
         "nombre": "Bulova",
@@ -68,7 +76,8 @@
         "precio": 57000,
         "id": 9,
         "img": "/img/orologi-donna-automatici-dama.jpg",
-        "stock": 4
+        "stock": 4,
+        "category": "Relojes"
 
     }
 ]
