@@ -5,7 +5,7 @@
         "id": 1,
         "img": "/img/istockphoto-1094472820-612x612.jpg",
         "stock": 4,
-        "category": "Joyas"
+        "categoria": "Joyas"
     },
     {
         "nombre": "Aros con esmeralda",
@@ -14,7 +14,7 @@
         "id": 2,
         "img": "/img/istockphoto-1145185972-612x612.jpg",
         "stock": 3,
-        "category": "Joyas"
+        "categoria": "Joyas"
     },
     {
         "nombre": "Colgante de Zafiro",
@@ -23,7 +23,7 @@
         "id": 3,
         "img": "/img/istockphoto-936858190-612x612.jpg",
         "stock": 2,
-        "category": "Joyas"
+        "categoria": "Joyas"
     },
     {
         "nombre": "Anillos de Oro Rosa y Plata",
@@ -32,7 +32,7 @@
         "id": 4,
         "img": "/img/istockphoto-1167923410-612x612.jpg",
         "stock": 2,
-        "category": "Alianzas"
+        "categoria": "Alianzas"
     },
     {
         "nombre": "Anillo de Plata",
@@ -41,7 +41,7 @@
         "id": 5,
         "img": "/img/istockphoto-1200574929-612x612.jpg",
         "stock": 6,
-        "category": "Alianzas"
+        "categoria": "Alianzas"
     },
     {
         "nombre": "Anillos de banda redonda",
@@ -50,7 +50,7 @@
         "id": 6,
         "img": "/img/istockphoto-172753313-612x612.jpg",
         "stock": 5,
-        "category": "Alianzas"
+        "categoria": "Alianzas"
     },
     {
         "nombre": "Orient RA",
@@ -59,7 +59,7 @@
         "id": 7,
         "img": "/img/orient-tristar-blu-cab.jpg",
         "stock": 3,
-        "category": "Relojes"
+        "categoria": "Relojes"
     },
     {
         "nombre": "Orient FAB0000FC",
@@ -68,7 +68,7 @@
         "id": 8,
         "img": "/img/orient-tristar-Oro-cab.jpg",
         "stock": 1,
-        "category": "Relojes"
+        "categoria": "Relojes"
     },
     {
         "nombre": "Bulova",
@@ -77,7 +77,6 @@
         "id": 9,
         "img": "/img/orologi-donna-automatici-dama.jpg",
         "stock": 4,
-        "category": "Relojes"
-
+        "categoria": "Relojes"
     }
 ]

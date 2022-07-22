@@ -1,3 +1,12 @@
+Página ecommerce de una Joyeria y Relojeria
+Como ejecutar el proyecto.
+1- https://github.com/pablomaglione/pablomaglioneRJS
+2- npm start para ejecutar el proyecto, puerto por defecto 3000
+
+En la misma se utilizo boostrap, iconos fontsawesone.
+Se categoriza los productos en 3 tipos de productos.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -19,10 +19,6 @@ const NavBar = () => {
               <Link className="nav-link" to={"category/Relojes"}>Relojes</Link>
               <Link className="nav-link" to={"category/Alianzas"}>Alianzas</Link>
               <Link className="nav-link" to={"category/Joyas"}>Joyas</Link>
-              {/*<a className="nav-link active" aria-current="page" href="#">Inicio</a>
-              <a className="nav-link" href="#">Relojes</a>
-              <a className="nav-link" href="#">Joyas</a>
-  <a className="nav-link" href="#">Alianzas</a>*/}
             </div>
           </div>
         </div>
