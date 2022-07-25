@@ -1,8 +1,14 @@
+import { useState } from "react";
 import ItemCount from "./ItemCount"
+import { Link} from "react-router-dom";
 
 const ItemDetail = ({ producto }) => {
-   
+    const [amount, setAmount] = useState(0);
     const { nombre, detalle, precio, img, stock, categoria} = producto;
+
+    const onAdd = (amount) => {
+        setAmount(amount);
+    };
 
     return (
         <div className="card rounded border-0" style={{ width: "15rem" }}>
@@ -12,7 +18,13 @@ const ItemDetail = ({ producto }) => {
                 <p className="card-detalle small text-center text-muted font-italic">{detalle}</p>
                 <p className="card-precio text-center card-text">{`$${precio}`}</p>
                 <p className="card-detalle small text-center text-muted font-italic">Categoria: {categoria}</p>
-                <ItemCount stock={stock} initial={1}/>             
+                {amount == 0 ? (<ItemCount stock={stock} initial={1} onAdd={onAdd}/>) : (<p className="flex flex-col text-center w-full mb-12">{amount} Producto Agregado </p>)}
+                <div className="flex flex-col text-center w-full mb-12" style={{padding: "0.5rem"}}>
+                    <Link to="/cart">
+                        <button className="third add btn-agregar btn btn-primary"> Finalizar Compra </button>
+                    </Link> 
+                </div>   
+                                  
             </div>
         </div>
     );

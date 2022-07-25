@@ -25,15 +25,15 @@ const ItemCount = (props) => {
         }
     }
 
-    function finCompra(){
+    {/*function finCompra(){
         Swal.fire({
             position: 'top-center',
             icon: 'success',
             title: 'Agregaste productos al carrito',
             showConfirmButton: false,
-            timer: 1500
+            timer: 1500,
           })
-    }
+        }*/}
 
     return (
         <div className="container px-8 py-8 mx-auto">
@@ -44,7 +44,7 @@ const ItemCount = (props) => {
                     <button onClick={cantAdd}> + </button>
                 </div>
                 <div>
-                    <button className="third add btn-agregar btn btn-primary" onClick={finCompra} disabled={disabled}> Agregar Producto </button>
+                    <button className="third add btn-agregar btn btn-primary" onClick={() => props.onAdd(count)} disabled={disabled}> Agregar Producto </button>
                 </div>
             </div>
         </div>
