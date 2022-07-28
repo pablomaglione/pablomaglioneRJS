@@ -9,10 +9,9 @@ const CartWidget = () => {
   const { cartItems } = useContext(CartContext);
   return (
     <div className="cart-widget">
-      <div className="qty-display">{parseInt(cartItems.lenght)}</div>
+      <span className="qty-display">{`${cartItems.lenght}`}</span>
       <FontAwesomeIcon icon={faShoppingCart} />
     </div>
   );
 };
-
 export default CartWidget;

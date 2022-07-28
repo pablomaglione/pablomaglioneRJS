@@ -6,9 +6,9 @@ const CartProvider = (props) => {
     const [cartItems, setCartItems] = useState([]);
 
     return(
-        <CartContext.CartProvider value={{cartItems, setCartItems}}>
+        <CartContext.Provider value={{cartItems, setCartItems}}>
             {props.children}
-        </CartContext.CartProvider>
+        </CartContext.Provider>
     );
 };
 

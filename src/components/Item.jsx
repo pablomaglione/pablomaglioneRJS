@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Item = ({ producto }) => {
-    const { nombre, detalle, precio, img, id, categoria } = producto;
+    const { nombre, detalle, precio, img, id} = producto;
     return (
         <div className="card rounded border-0" style={{ width: "15rem" }}>
             <div className="card-body p-4 d-flex flex-column align-items-center justify-content-center">
