@@ -13,7 +13,7 @@ const ItemDetail = ({ producto }) => {
         setCant(cant);
         addItem(producto, cant);
     };
-    console.log ('Producto1: ', producto)
+    
     return (
         <div className="card rounded border-0" style={{ width: "15rem" }}>
             <div className="card-body p-4 d-flex flex-column justify-content-center">
