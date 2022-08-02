@@ -5,15 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const CartWidget = () => {
-  const { cartItems } = useContext(CartContext);
-
-  const totalProd = () =>
-		cartItems.reduce(
-			(acc, productoActual) => acc + productoActual.quantity,
-			0,
-		);
-
-    console.log ("Cant: ", totalProd());
+  const { totalProd } = useContext(CartContext);
 
   return (
     <div className="ps-4 d-flex align-items-center flex-column">
