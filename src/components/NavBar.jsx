@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <header>     
+    <header>
       <nav className="navbar navbar-expand-sm bg-light">
-      <div>
-        <Link to={"/"}>
-          <img width="100" src={imgLogo} alt="logo" />
-        </Link>
-      </div>
+        <div>
+          <Link to={"/"}>
+            <img width="100" src={imgLogo} alt="logo" />
+          </Link>
+        </div>
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
@@ -23,7 +23,9 @@ const NavBar = () => {
           </div>
         </div>
         <div>
-          <CartWidget />
+          <Link className="nav-link" to={"/Cart"}>
+            <CartWidget />
+          </Link>
         </div>
       </nav>
     </header>

@@ -6,9 +6,18 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const CartWidget = () => {
   const { cartItems } = useContext(CartContext);
+
+  const totalProd = () =>
+		cartItems.reduce(
+			(acc, productoActual) => acc + productoActual.quantity,
+			0,
+		);
+
+    console.log ("Cant: ", totalProd());
+
   return (
-    <div className="cart-widget">
-      <span className="qty-display">{cartItems.lenght}</span>
+    <div className="ps-4 d-flex align-items-center flex-column">
+      <span className="qty-display">{totalProd() || ""} </span>
       <FontAwesomeIcon icon={faShoppingCart} />
     </div>
   );

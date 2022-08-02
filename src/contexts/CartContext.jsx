@@ -14,8 +14,6 @@ const CartProvider = ({ children }) => {
         }
     };
 
-    console.log('Cart: ', cartItems);
-
     //Vacia el carrito
     const clearCart = () => setCartItems([]); 
 
@@ -25,8 +23,13 @@ const CartProvider = ({ children }) => {
     //Elimina producto del carrito
     const removeItem = (id) => setCartItems(cartItems.filter(product => product.id !== id)); 
 
+    //Suma el precio de todos los productos
+    const totalPrice = () => {
+        return cartItems.reduce((previous, actual) => previous + actual.quantity * actual.precio, 0);
+    }
+
     return (
-        <CartContext.Provider value={{ cartItems, addItem, clearCart, isInCart, removeItem }}>
+        <CartContext.Provider value={{ cartItems, addItem, clearCart, isInCart, removeItem, totalPrice }}>
             {children}
         </CartContext.Provider>
     );
