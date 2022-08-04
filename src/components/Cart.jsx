@@ -6,9 +6,8 @@ import Swal from 'sweetalert2'
 
 const Cart = () => {
     const { cartItems, totalPrice } = useContext(CartContext);
-    const cant = Object.keys(cartItems).length; //Si no hacia obtenia de esta forma la cantidad me daba undifined
 
-    if (cant === 0) {
+    if (cartItems.length === 0) {
         return (
             <>
                 <div className="d-flex flex-column align-items-center">
