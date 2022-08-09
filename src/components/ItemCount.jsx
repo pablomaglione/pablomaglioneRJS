@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 
 const ItemCount = (props) => {
     const[count, setCount] = useState (props.initial);
-    const [disabled, setDisabled] = useState (props.btn);
+    const [disabled, setDisabled] = useState (true);
 
     function cantSubstract(){
         if(count > 0){

@@ -22,10 +22,10 @@ const ItemDetail = ({ producto }) => {
                 <p className="card-detalle small text-center text-muted font-italic">{detalle}</p>
                 <p className="card-precio text-center card-text">{`$${precio}`}</p>
                 <p className="card-detalle small text-center text-muted font-italic">Categoria: {categoria}</p>
-                {cant == 0 ? (<ItemCount stock={stock} initial={1} onAdd={onAdd}/>) : (<p className="flex flex-col text-center w-full mb-12">{cant} Producto Agregado </p>)}
+                {cant == 0 ? (<ItemCount stock={stock} initial={0} onAdd={onAdd}/>) : (<p className="flex flex-col text-center w-full mb-12">{cant} Producto Agregado </p>)}
                 <div className="flex flex-col text-center w-full mb-12" style={{padding: "0.5rem"}}>
                     <Link to="/cart">
-                        <button className="third add btn-agregar btn btn-primary"> Finalizar Compra </button>
+                        <button className="third add btn-agregar btn btn-primary"> Ir al Carrito </button>
                     </Link> 
                 </div>   
                                   
